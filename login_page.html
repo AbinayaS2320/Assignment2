@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credientials_page</title>
+</head>
+
+<body>
+
+    <div class="page_bg">
+
+        <img src="logo.png" alt="">
+
+
+        <div class="text_field">
+            <input type="text" placeholder="Name" required>
+            <label for=""></label>
+        </div>
+        <div class="text_field">
+            <input type="email" placeholder="Email" required>
+            <label for=""></label>
+        </div>
+        <div class="text_field">
+            <input type="tel" placeholder="Phone" pattern="[0-9]{10}" required>
+            <label for=""></label>
+        </div>
+        <div class="text_field">
+            <input type="password" placeholder="Password" required>
+            <label for=""></label>
+        </div>
+        <div class="remember_me">
+            <input type="checkbox">Remember me
+        </div>
+        <div class="forget_password">Forgot Password ?</div>
+        <a href="http://www.karmadevelopers.me/"><input type="submit" value="Submit"></a>
+        <a href="index.html" class="cancel">
+            <p>Cancel</p>
+        </a>
+    </div>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(120deg, rgb(0, 0, 0), #57525b);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .page_bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            background: linear-gradient(120deg, #f7f4f95c, rgba(202, 197, 195, 0.338));
+            border-radius: 90px;
+            box-shadow: 30px 20px 20px rgb(0, 0, 0);
+        }
+        
+        .page_bg img {
+            padding-bottom: 30px;
+            position: relative;
+            left: 170px;
+            top: 10px;
+            border-bottom: 3px solid black;
+        }
+        
+        .page_bg .text_field {
+            position: relative;
+            left: 50px;
+            margin: 20px 0;
+        }
+        
+        .page_bg .text_field input {
+            position: relative;
+            width: 69%;
+            left: 1px;
+            padding: 0 20px;
+            height: 40px;
+            outline: none;
+            outline: black;
+            border-radius: 50px;
+            border: none;
+        }
+        
+        .text_field label {
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+        }
+        
+        .forget_password {
+            position: relative;
+            bottom: 30px;
+            left: 220px;
+            transform: translatey(-50% -30%);
+            margin: -5px 0 20px 5px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+        }
+        
+        .remember_me {
+            position: relative;
+            padding-left: 44px;
+            transform: translatey(-50% -30%);
+            margin: -5px 0 20px 5px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+        }
+        
+        input[type="submit"] {
+            position: relative;
+            left: 17%;
+            cursor: pointer;
+            color: rgb(251, 247, 243);
+            font-weight: 700;
+            width: 300px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.445);
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        input[type="submit"]:hover {
+            transform: scale(1.1);
+            background: rgb(86, 83, 83);
+            border-color: transparent;
+            color: rgb(255, 255, 255);
+            transition: .6s;
+        }
+        
+        .cancel p {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            left: 11%;
+            padding: 20px;
+        }
+        
+        .cancel p:hover {
+            color: rgb(145, 26, 26);
+            transition: .5s;
+        }
+        
+        .cancel {
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</body>
+
+</html>
